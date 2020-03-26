@@ -9,3 +9,5 @@ Two components running in their own process:
         2. send jwt to client (already happening)
         3. attach jwt to each **further request** done by client
         4. check in backend if jwt is in DB
+## Comments
+1. Probably session- or cookie based token storage would be better -> more research needed
