@@ -39,6 +39,8 @@ router.post('/login', (req, res) => {
     });
 });
 
+// TODO: further endpoints for data (f.e. GET/plans , GET/userdata) (see questions in readme)
+
 app.use(router);
 
 let port = process.env.PORT || 3000;
