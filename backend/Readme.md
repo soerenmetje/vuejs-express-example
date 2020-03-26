@@ -1,6 +1,10 @@
 # Backend Example
 - Serves data of multiple users
 - Protected by authorisation
+- No assumption about presentation towards user / user interface
+
+# Remaining Questions
+1. How to handle further data requests
 
 ## Setup
 1. Run `npm i`

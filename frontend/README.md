@@ -1,8 +1,8 @@
-# frontend
+# Frontend example
+- Serves User Interface
+- Fetches data from Backend
 
-> A Vue.js project
-
-## Build Setup
+## Setup
 
 ``` bash
 # install dependencies
