@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '../components/HelloWorld'
 import Login from "../components/Login";
-import UserBoard from "../components/UserBoard";
+import Dashboard from "../components/Dashboard";
 
 
 Vue.use(Router);
@@ -25,8 +25,8 @@ let router = new Router({
     },
     {
       path: '/dashboard',
-      name: 'userboard',
-      component: UserBoard,
+      name: 'dashboard',
+      component: Dashboard,
       meta: {
         requiresAuth: true
       }
@@ -50,7 +50,7 @@ router.beforeEach((to, from, next) => {
         if (user.is_admin == 1) {
           next()
         } else {
-          next({name: 'userboard'})
+          next({name: 'dashboard'})
         }
       } else {
         next()
@@ -62,7 +62,7 @@ router.beforeEach((to, from, next) => {
     if (localStorage.getItem('jwt') == null) {
       next()
     } else {
-      next({name: 'userboard'})
+      next({name: 'dashboard'})
     }
   } else {
     next()
